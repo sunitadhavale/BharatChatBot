@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+    <title>CPGRAMS-Home</title>
+    <title>Welcome to CPGRAMS</title>
+    <link rel="stylesheet" href="{{ url_for('static',     filename='css/template.css') }}">
+    <style>
+       .Sameline { 
+        display: inline-block; 
+        
+        }
+  </style>
+ </head>
+ <body>
+ 
+ 
+ <div class="topbar">
+    
+        <div class="left" align="center">
+            <ul>
+                
+                <h1 style="color: blue;">    <span class="lang-hin">भारत सरकार </span>
+                    <span>Government of India,</span>                
+                    <span class="lang-hin">कार्मिक, लोक शिकायत और पेंशन मंत्रालय</span>
+                    <span>Ministry of Personnel, Public Grievances & Pensions</span>
+                </h1>
+            </ul>
+        </div>
+        <div class="right" align="center">
+            <strong><nav>
+            <ul class="top_row flex-row" >            
+            <div class="Sameline"><a href="{{ url_for('home') }}"> <h1 style="color: red;" align="center"> Home </h1></a> </div>
+            <div class="Sameline"><a href="{{ url_for('about') }}"><h1 style="color: red;" align="center"> About </h1></a> </div>
+            </ul>
+            </nav></strong>
+        </div>
+    
+</div>
+
+    <header>
+      <div class="container">
+         <h1 class="logo" align="center" style="color: red;">Centralized Public Grievance Redress And Monitoring System</h1>  
+                
+      </div>
+    </header>
+    
+    {% block content %}
+    {% endblock %}
+ <br>
+ <br>   
+ </body>
+ 
+ <footer>
+ 
+ <div class="footer-top">
+        <div class="copyright" align="center">
+        <h3 class="logo" align="center" style="color: red;">
+        <span>This ChatBot App is designed & developed by Dr Sunita Dhavale, assistant Professor, DIAT, Pune for MyGov Ideation Competition.</span>
+        </span> Version 23122019.1, Copyright &copy;  2019 </span>
+        </h3>
+        </div>
+ </div>
+ 
+ </footer>
+</html>

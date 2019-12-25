@@ -1,0 +1,58 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "Hello", "Good day", "Whats up"],
+         "responses": ["Hello Sir!", "Good to see you Sir!", "Hi, how can I help you Sir?", "Welcome Sir","How can i help you?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["bye", "See you later", "Goodbye", "Good day","have to leave"],
+         "responses": ["Sad to see you go :(", "Nice to talk to you Sir", "Thanks. Talk to you later then", "Goodbye!", "Kindly contact if anything required sir?"],
+         "context_set": ""
+        },
+        {"tag": "problem",
+         "patterns": ["name is", "I am", "Employee","Staff","Officer", "working as", "department", "facing problem", "i need", "lodge complaint", "i want"],
+         "responses": ["Thanks for sharing that!", "May I know your full name and designation please!", "May I know what problem you are facing sir!","May I know your department please!"],
+         "context_set": ""
+        },
+        {"tag": "name",
+         "patterns": ["what is your name?", "name?"],
+         "responses": ["You can call me Bhartiya.", "I'm Bhartiya!", "I'm Indian."],
+         "context_set": ""
+        },
+        {"tag": "contact",
+         "patterns": ["Id like to know contact details", "what is phone number", "what is an email address", "can i get phone number", "what is fax number", "whom i should contact?"],
+         "responses": ["Contact Mr. Mohite on his landline 020-24304133", "alternatively, send email to Mr. Mohite on his email id abc@diat.com", "send fax to Mr. Mohite on his fax number 020-24304133","fill online grievance/complaint form available on this site"],
+         "context_set": ""
+         },
+        {"tag": "pension",
+         "patterns": ["retirement benefits", "voluntary retirement?", "monthly pension"],
+         "responses": ["Sorry Sir, Contact Mr. Sambhaji on his landline: 020-24304133", "alternatively, kindly send email to Mr. Sambhaji on his email id: abc@diat.com", "send fax to Mr. Sambhaji on his fax number: 020-24304133"],
+         "context_set": ""
+        },
+    	{"tag": "salary",
+         "patterns": ["regular salary", "regular increment", " job promotion delayed","Delay in sanction of annual payment","payment not received"],
+         "responses": ["Sorry Sir, Contact Mrs. Devika on her landline: 020-24304133", "alternatively, kindly send email to Mrs. Devika on her email id: abc@diat.com", "send fax to Mrs. Devika on her fax number: 020-24304133"],
+         "context_set": ""
+        },
+    	{"tag": "medical",
+         "patterns": ["medical claims", "not feeling well", "illness", "need medical treatment", "medical facilities","CGHS rate for central government employees","dispensary not working properly","Pathological Tests","undergoing treatment in hospital ","cancer or heart surgery","card for ayushman "],
+         "responses": ["Sorry Sir, Contact Mrs. Devikarani,Department of Health/Ministry of Ayush on her landline: 020-24304133", "alternatively, kindly send email to Mrs. Devikarani,Department of Health/Ministry of Ayush on her email id: abc@diat.com", "send fax to Mrs. Devikarani,Department of Health on her fax number: 020-24304133"],
+         "context_set": ""
+        },
+    	{"tag": "training",
+         "patterns": ["not received training", "need to have workshop", "higher education", "hands-on", "new latest technology","upgrade my skills", "certification exam or courses"],
+         "responses": ["Sorry Sir, Contact Mr. Dev on his landline: 020-24304133", "alternatively, kindly send email to Mr. Dev on his email id: abc@diat.com", "send fax to Mr. Dev on his fax number: 020-24304133"],
+         "context_set": ""
+        },
+    	{"tag": "facilities",
+         "patterns": ["no computer or laptop to work", "need internet connection", "furniture", "no telephone facility present", "need space","upgrade my machine and software","software not working","office is not functional"],
+         "responses": ["Sorry Sir, Contact Mr. Datacenter on his landline: 020-24304133", "alternatively, kindly send email to Mr. Datacenter on his email id: abc@diat.com", "send fax to Mr. Datacenter on his fax number: 020-24304133"],
+         "context_set": ""
+        },
+        {"tag": "hours",
+         "patterns": ["when are you guys open?", "what are your office hours?", "hours of operation?", "what is office timings?", "time?"],
+         "responses": ["We are open 10am-5pm Monday-Friday!"],
+         "context_set": ""
+        }
+   ]
+}

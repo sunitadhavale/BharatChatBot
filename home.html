@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CPGRAMS-Home</title>
+    <title>Welcome to CPGRAMS</title> 
+    <script>
+        function pressed(e) {
+            // Has the enter key been pressed?
+            if ( (window.event ? event.keyCode : e.which) == 13) { 
+                // If it has been so, manually submit the <form>
+                document.forms[0].submit();
+            }
+        }
+    </script>
+    <style>
+       .Sameline { 
+        display: inline-block; 
+        
+        }
+  </style>
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+    
+    
+    <center>
+    <h2> New to this System? Don't Worry. Our Bharat ChatBot will assist You... </h2><br>
+    
+    <form method="post" action="/message"> 
+            <img src="/static/you.jpg" width="30" height="30" alt="Indian" >       
+            <div class="Sameline"><h3 style="color: blue;">You Asked:</h3> </div>
+            <div class="Sameline"><textarea rows="2" onkeydown="pressed(event)" cols="100" name="message" placeholder="Please Type Your Queries Here..." autofocus></textarea></div>
+            <br><br>
+            <img src="/static/bharat.jpg" width="30" height="30" alt="Bharat" >   
+            <div class="Sameline"><h3 style="color: blue;" >Bharat Said:</h3></div>
+            <div class="Sameline"><textarea rows="2" cols="100" name="servermessage" readonly placeholder="Hi, I am Bharat. How can I help You?">{{messageret}}</textarea><br></div>
+    </form>
+    </center>
+    {% endblock %}
+    
+    
+    
+  </body>
+</html>
